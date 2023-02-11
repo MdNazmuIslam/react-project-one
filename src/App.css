@@ -1,38 +1,416 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;0,900;1,300;1,500;1,600;1,700;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Ads .container,
+#Form-section .container {
+  padding-left: 5rem;
+  padding-right: 5rem;
+
+}
+
+.navbar-toggler {
+  top: 5rem;
+  left: 7%;
+  position: absolute;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-toggler .one,
+.navbar-toggler .two,
+.navbar-toggler .three {
+  display: block;
+  width: 4rem;
+  height: 0.3rem;
+  background-color: #E82828;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-toggler .two {
+  width: 5rem;
+  margin-top: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar-toggler .three {
+  margin-top: 1rem;
+}
+
+.barnd-logo img {
+  max-width: 13rem;
+  min-width: 5;
+  width: 100%;
+
+}
+
+/* primary nab css */
+.paimary-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 4rem 6rem 0rem 3rem;
+  background-color: #0b2646;
+}
+
+.close span {
+  display: block;
+  width: 4rem;
+  height: 0.4rem;
+  border-radius: 0.5rem;
+  background-color: #E82828;
+}
+
+.close span:first-child {
+  transform: rotate(140deg);
+}
+
+.close span:nth-child(2) {
+  margin-top: -0.3rem;
+  transform: rotate(45deg);
+}
+
+.paimary-navbar .nav-items {
+  padding: 1rem;
+}
+
+.paimary-navbar .nav-items:hover .nav-link {
+  color: #E82828;
+}
+
+.paimary-navbar .nav-link {
   color: white;
+  font-size: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.barnd-logo {
+  margin: 3rem;
+  margin-top: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+section {
+  overflow: hidden;
+}
+
+#Form-section form {
+  margin: 3rem auto;
+  padding: 3rem 4rem;
+  border-radius: 2.5rem;
+  background-color: #0b2646;
+  background: url(../src/images/bg-1.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#Form-section form label {
+  color: #E82828;
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+
+#Form-section form .logo img {
+  width: 9rem;
+}
+
+#Form-section form .logo {
+  margin-right: 1.5rem;
+}
+
+#Form-section form h2 {
+  font-size: 4.8rem;
+  color: white;
+
+}
+
+#Form-section form input {
+  padding: 2rem 3rem;
+  font-size: 3.6rem;
+}
+
+#Form-section form label,
+#Form-section form input {
+  margin: 1rem auto;
+  border-radius: 1rem;
+}
+
+#Form-section form .btn {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+#Form-section form .btn:hover {
+  transition: all 0.3s;
+  transform: scale(1.1);
+}
+
+.form-control:focus {
+  transition: all 0.3s;
+  transform: scale(1.1);
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+/*Delhi-Metro section */
+.Delhi-Metro-Route-bg {
+  background-color: #F0F0F0;
+  border-radius: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.topdiv-Route {
+  padding-left: 7rem;
+  padding-right: 7rem;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+}
+
+.topdiv-Route h1 {
+  font-size: 7.2rem;
+  font-weight: 600;
+}
+
+.topdiv-Route p {
+  font-size: 2rem;
+}
+
+.Operators {
+  padding: 3rem;
+  height: 100%;
+  background-color: #0b2646;
+  background: url(../src/images/bg-1.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-radius: 2.5rem;
+}
+
+.Operators p {
+  font-size: 2.2rem;
+  line-height: 4.8rem;
+}
+
+.lines {
+  margin: 3rem;
+  padding: 3rem;
+  border-radius: 1.5rem;
+}
+
+.line-map-chart {
+  text-align: center;
+}
+
+.line-map-chart .btn {
+  margin: 1rem auto;
+  padding: 2rem;
+  font-size: 2.4rem;
+  width: 90%;
+  color: white;
+  border-radius: 1rem;
+  transition: all 0.3s;
+  background-color: #0b2646;
+}
+
+.line-map-chart .btn.active {
+  border: 0.2rem solid red;
+}
+
+.line-map-chart .btn:hover {
+
+  color: white;
+  border: 0.2rem solid red;
+}
+
+.lines h2 {
+  font-size: 6.2rem;
+  font-weight: bold;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.Rotepage .lines h2 {
+  font-size: 4.2rem;
+}
+
+.list h4 {
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+.redline {
+  margin-top: 2rem;
+}
+
+.redline span {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 1.5rem;
+  border-radius: 50%;
+  background: #E82828;
+}
+
+.redline p,
+.TS p {
+  font-size: 2rem;
+}
+
+.TS {
+  margin-top: 3rem;
+}
+
+.TS span {
+  margin-right: 2rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0rem 0rem 0rem 0.5rem #E82828;
+  z-index: 2;
+}
+
+.dost {
+  width: 100%;
+  align-items: center;
+  position: absolute;
+}
+
+.dost span {
+  z-index: 1;
+  display: block;
+  margin: 2.4rem;
+  margin-top: 3rem;
+  margin-left: -.30rem;
+  transform: rotate(270deg);
+  width: 1.5rem;
+  height: 0.2rem;
+  background: #0b2646;
+}
+
+.footerlink a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.footerlink {
+  margin-bottom: 10rem;
+}
+
+@media (max-width: 1200px) {
+  .lines h2 {
+    font-size: 4.8rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 767px) {
+  #Form-section form h2 {
+    font-size: 2.8rem;
   }
+
+  #Form-section form .logo img {
+    width: 5rem;
+  }
+
+  #Form-section form label,
+  #Form-section form input {
+    font-size: 2.6rem;
+
+  }
+
+  #Form-section form input {
+    padding: 1.5rem 2rem;
+  }
+
+  .topdiv-Route h1 {
+    font-size: 4.2rem;
+  }
+
+  .topdiv-Route p {
+    font-size: 1.6rem;
+  }
+
+  .lines h2 {
+    font-size: 4rem;
+  }
+
+  .Ads .container,
+  #Form-section .container {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .barnd-logo img {
+    width: 10rem;
+  }
+
+  .topdiv-Route {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+
+  #Form-section form label,
+  #Form-section form input {
+    font-size: 1.8rem;
+
+  }
+
+  #Form-section form,
+  .Operators {
+    border-radius: 1rem;
+
+  }
+
+  .lines h2 {
+    font-size: 2.6rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* route page css */
+.fly hr {
+  color: #b1b1b1;
+  height: 2px !important;
+}
+
+.fly-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  background-color: #FF6A10;
+}
+
+.fly-pb {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+}
+
+.fly-pb button {
+  color: #FF6A10;
+}
+
+.MetroLines-list {
+  padding-left: 0rem;
+}
+
+.MetroLines-list li {
+  list-style: none;
+  font-size: 1.6rem;
 }

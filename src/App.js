@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import HeaderMenu from './component/HeaderMenu';
+import Ads from './component/ads';
+import Form from './component/Form';
+import TerminalSection from './component/Terminal';
+import Adslong from './component/adslong';
+import CtLink from './component/contactlink';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <HeaderMenu />
+      <Ads />
+      <Form />
+      <TerminalSection />
+      <Adslong />
+      <CtLink />
+   
+    </>
   );
-}
+};
+
+
+
+
 
 export default App;
